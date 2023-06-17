@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="flex justify-center flex-col items-center">
+    <div class="flex rounded-3 border-2 p-3 mt-5 mb-10">
+        Ваши данные:   
+    </div>
+    <div >
+        <div class="nav-link" >Username: {{ username }}</div>
+    </div>
+    <br>
+    <div >
+        <div class="nav-link" >Email : {{ email }}</div>
+      </div>
+</div>
+
+{% endblock content %}

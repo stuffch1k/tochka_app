@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="flex justify-center flex-col items-center">
+        <div class="flex rounded-3 border-2 p-3 mt-5 mb-10">
+            <div class="flex flex-col">
+                <h2> Чтобы воспользоваться сервисом, вам нужно зарегистироваться или залогиниться</h2>
+            </div>
+            <br>
+            
+        </div>
+        <div >
+            <a class="nav-link" href="/user/signup">Зарегистироваться</a>
+        </div>
+        <br>
+        <div >
+            <a class="nav-link" href="/user/signin">Войти</a>
+          </div>
+</div>
+{% endblock %}
