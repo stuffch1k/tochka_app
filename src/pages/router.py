@@ -146,7 +146,7 @@ async def like_video(request:Request, video_id: int, current_user: UserDB = Depe
     print(resp.context)
     print("rrrrrrrrrrrrrrr")
     url = resp.context["url"]
-    print(video_id)
+    print(current_user["id"])
     resp = await like_dislike(video_id=video_id,user_id = current_user["id"], a_session=a_session)
     likes_count = await video_like_count(video_id = video_id, a_session = a_session)
     return templates.TemplateResponse("video.html", {"request": request, "url": url, "likes_count": likes_count, "video_id": video_id})
