@@ -146,7 +146,7 @@ async def like_video(request:Request, video_id: int, current_user: UserDB = Depe
     print(resp.context)
     print("rrrrrrrrrrrrrrr")
     url = resp.context["url"]
-    print(current_user["id"])
+    # print(current_user["id"])
     if current_user is None:
         return "Нужно войти"
     resp = await like_dislike(video_id=video_id,user_id = current_user["id"], a_session=a_session)
